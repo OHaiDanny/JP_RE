@@ -1,0 +1,407 @@
+@charset "CP850";
+/* FONT FACES :D */
+@font-face {
+  font-family: gotham_thin;
+  src: url("/font/gotham-thin-webfont.eot");
+  src: local("☺︎"), url("/font/gotham-thin-webfont.eot?#iefix") format("embedded-opentype"), url("/font/gotham-thin-webfont.woff") format("woff"), url("/font/gotham-thin-webfont.ttf") format("truetype"), url("/font/gotham-thin-webfont.svg#gotham_thinregular") format("svg"); }
+@font-face {
+  font-family: gotham_book;
+  src: url("/font/gotham-book-webfont.eot");
+  src: local("☺︎"), url("/font/gotham-book-webfont.eot?#iefix") format("embedded-opentype"), url("/font/gotham-book-webfont.woff") format("woff"), url("/font/gotham-book-webfont.ttf") format("truetype"), url("/font/gotham-book-webfont.svg#gotham_bookregular") format("svg"); }
+@font-face {
+  font-family: gotham_light;
+  src: url("/font/gotham-light-webfont.eot");
+  src: local("☺︎"), url("/font/gotham-light-webfont.eot?#iefix") format("embedded-opentype"), url("/font/gotham-light-webfont.woff") format("woff"), url("/font/gotham-light-webfont.ttf") format("truetype"), url("/font/gotham-light-webfont.svg#gotham_lightregular") format("svg"); }
+html {
+  overflow-y: scroll; }
+
+body {
+  font-size: 16px;
+  font-family: gotham_light, Arial, sans-serif; }
+
+html, body {
+  height: 100%; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.table {
+  display: table; }
+
+.row {
+  display: table-row; }
+
+.clear {
+  clear: both; }
+
+hr {
+  padding-top: 3em;
+  border: 0;
+  border-bottom: 1.5px dashed #f7891e; }
+
+header {
+  background: #333;
+  text-align: center;
+  color: white;
+  width: 100%;
+  position: fixed; }
+  header ul {
+    position: relative; }
+    header ul li {
+      display: block; }
+      header ul li a {
+        display: block;
+        height: 100%; }
+      header ul li a:hover {
+        color: #f7891e; }
+
+.middleBlock:first-of-type {
+  background: url(../img/about.jpg) 50% 0 no-repeat fixed;
+  background-size: 100%;
+  min-height: 100%;
+  color: #f2f2f2; }
+  .middleBlock:first-of-type article {
+    width: 100%;
+    background: rgba(10, 10, 10, 0.6); }
+    .middleBlock:first-of-type article h2 {
+      padding: 35vh 0 0 0;
+      font-size: 5vmax;
+      text-transform: uppercase;
+      text-align: center;
+      color: #f7891e; }
+    .middleBlock:first-of-type article h3 {
+      padding: 0.5vmax 0 0 0;
+      text-transform: uppercase;
+      font-size: 3vmax;
+      color: #f7891e;
+      font-family: gotham_book, Arial, sans-serif; }
+    .middleBlock:first-of-type article p {
+      font-size: 2vmax;
+      padding: 3vmax 10%;
+      line-height: 3vmax; }
+
+.middleBlock + .middleBlock {
+  background: #d9d9d9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  color: #262626; }
+  .middleBlock + .middleBlock article {
+    width: 100%;
+    padding: 1em 0;
+    background: inherit; }
+    .middleBlock + .middleBlock article h3 {
+      padding: 1.5em 10% 0;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 5vmax;
+      color: #f7891e;
+      text-transform: uppercase;
+      font-family: gotham_book, Arial, sans-serif; }
+    .middleBlock + .middleBlock article p {
+      font-size: 2.5vmax;
+      padding: 1em 10% 0;
+      line-height: 3vmax; }
+    .middleBlock + .middleBlock article section {
+      display: inline-block;
+      width: 100%;
+      padding: 1em 0; }
+      .middleBlock + .middleBlock article section h3 {
+        font-size: 2.5vmax;
+        padding: 0;
+        text-align: center;
+        color: #f7891e; }
+      .middleBlock + .middleBlock article section p {
+        padding: 0.5em 10%;
+        font-size: 2vmax;
+        line-height: 2.5vmax; }
+
+.middleBlock + .middleBlock + .middleBlock {
+  background: #fffdfc;
+  height: auto; }
+  .middleBlock + .middleBlock + .middleBlock article {
+    background: transparent;
+    padding-top: 5em; }
+    .middleBlock + .middleBlock + .middleBlock article #projectContainer {
+      margin: 0 10%; }
+      .middleBlock + .middleBlock + .middleBlock article #projectContainer .project {
+        width: 100%;
+        padding: 1em;
+        color: #d9d9d9;
+        position: relative; }
+        .middleBlock + .middleBlock + .middleBlock article #projectContainer .project img {
+          width: 100%; }
+        .middleBlock + .middleBlock + .middleBlock article #projectContainer .project h4 {
+          font-size: 1.2em;
+          text-align: center;
+          padding: 0.5em 0;
+          color: #262626;
+          font-family: gotham_book;
+          font-weight: bold;
+          text-transform: uppercase; }
+        .middleBlock + .middleBlock + .middleBlock article #projectContainer .project p {
+          font-size: 0.8em;
+          display: none; }
+        .middleBlock + .middleBlock + .middleBlock article #projectContainer .project button {
+          background: #f7891e;
+          color: white;
+          padding: 0.5em;
+          text-transform: uppercase;
+          font-size: 1em;
+          font-family: gotham_light;
+          border: none;
+          position: relative;
+          left: 10%;
+          width: 100%;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          border-radius: 5px; }
+        .middleBlock + .middleBlock + .middleBlock article #projectContainer .project button:hover {
+          background: #c26307;
+          cursor: pointer; }
+
+.middleBlock + .middleBlock + .middleBlock + .middleBlock {
+  background: url(../img/contact.jpg) 50% 0 no-repeat fixed;
+  background-size: 100%;
+  min-height: 100%; }
+  .middleBlock + .middleBlock + .middleBlock + .middleBlock article {
+    background: rgba(30, 30, 30, 0.8); }
+    .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form {
+      width: 60%;
+      margin: 0 auto;
+      background: transparent;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px;
+      color: #f7891e; }
+      .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form h3 {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: inherit;
+        font-family: gotham_light, Arial, sans-serif;
+        font-size: 5vmax;
+        opacity: 1;
+        padding: 0.5em;
+        color: #f7891e;
+        background: transparent; }
+      .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form p {
+        font-size: 1em;
+        line-height: 1.5em;
+        text-align: center;
+        padding: 0 0 1em 0; }
+      .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form h5 {
+        padding: 1em 0;
+        text-align: center;
+        font-size: 3vmax;
+        font-weight: bold; }
+        .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form h5 u {
+          text-decoration: none;
+          border-top: 1px dashed #f7891e;
+          border-bottom: 1px dashed #f7891e;
+          padding: 0.2em 0; }
+        .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form h5 u:hover {
+          color: #d9d9d9;
+          border-color: #d9d9d9; }
+      .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form label h4 {
+        text-transform: uppercase; }
+      .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form input[type="text"],
+      .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form input[type="email"],
+      .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form textarea {
+        width: 100%;
+        border: 1px solid #CCC;
+        background: #FFF;
+        padding: 0.3em 0;
+        margin: 0.3em 0;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px; }
+      .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form textarea {
+        height: 10vh; }
+      .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form button[type="submit"] {
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        background: #f7891e;
+        color: #FFF;
+        margin: 0 0 5px;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 20px; }
+      .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form button[type="submit"]:hover {
+        background: #a4a6a6; }
+  .middleBlock + .middleBlock + .middleBlock + .middleBlock p {
+    padding: 1em 0;
+    text-align: center;
+    color: #f7891e; }
+  .middleBlock + .middleBlock + .middleBlock + .middleBlock aside {
+    text-align: center;
+    color: #f7891e;
+    font-size: 5vmax; }
+
+footer {
+  background: #a4a6a6;
+  color: white; }
+  footer p {
+    display: block;
+    padding: 0.25em 0;
+    text-align: center; }
+
+@media screen and (min-width: 640px) {
+  .middleBlock + .middleBlock + .middleBlock {
+    background: #fffdfc;
+    height: auto; }
+    .middleBlock + .middleBlock + .middleBlock article {
+      background: transparent;
+      padding-top: 5em; }
+      .middleBlock + .middleBlock + .middleBlock article #projectContainer {
+        display: inherit;
+        margin: 0 10%; }
+        .middleBlock + .middleBlock + .middleBlock article #projectContainer .project {
+          display: block;
+          width: 48%;
+          height: 450px;
+          padding: 1%;
+          float: left;
+          color: #d9d9d9; }
+          .middleBlock + .middleBlock + .middleBlock article #projectContainer .project img {
+            width: 100%; }
+          .middleBlock + .middleBlock + .middleBlock article #projectContainer .project h4 {
+            font-size: 1.2em;
+            text-align: center;
+            padding: 0.5em 0;
+            color: #262626;
+            font-family: gotham_book;
+            font-weight: bold;
+            text-transform: uppercase; }
+          .middleBlock + .middleBlock + .middleBlock article #projectContainer .project p {
+            font-size: 0.8em;
+            display: block; } }
+@media screen and (min-width: 1024px) {
+  header {
+    z-index: 100;
+    text-align: left; }
+    header h2 {
+      margin-top: 0.25em;
+      font-size: 2em;
+      margin-left: 10%;
+      text-transform: uppercase;
+      color: #f7891e;
+      font-family: gotham_light;
+      display: inline-block; }
+      header h2 span {
+        color: white; }
+    header nav {
+      float: right; }
+    header ul {
+      display: block;
+      text-align: right;
+      position: relative;
+      right: 8%; }
+      header ul li {
+        display: inline-block; }
+        header ul li a {
+          display: block;
+          margin: 1em 2em;
+          height: 100%; }
+        header ul li a:hover {
+          color: #f7891e; }
+
+  .middleBlock:first-of-type article p {
+    font-size: 1.4vmax;
+    padding: 3vmax 10%;
+    line-height: 2vmax; }
+
+  .middleBlock + .middleBlock article {
+    padding-top: 3em; }
+    .middleBlock + .middleBlock article h3 {
+      margin: 0.4em 0;
+      padding: 0 10%;
+      text-transform: uppercase;
+      font-size: 3vmax;
+      text-transform: uppercase;
+      font-family: gotham_book, Arial, sans-serif; }
+    .middleBlock + .middleBlock article p {
+      font-size: 1.3vmax;
+      padding: 1em 10% 0;
+      line-height: 2.4vmax; }
+    .middleBlock + .middleBlock article img {
+      float: left;
+      margin-left: 10%;
+      padding-right: 3%; }
+    .middleBlock + .middleBlock article .table {
+      padding: 0 8%; }
+    .middleBlock + .middleBlock article section {
+      display: table-cell;
+      width: 33%;
+      padding: 0 2em; }
+      .middleBlock + .middleBlock article section h3 {
+        font-size: 1.3vmax;
+        padding: 1em 0;
+        margin: 0; }
+      .middleBlock + .middleBlock article section img {
+        width: 50%;
+        float: none;
+        -webkit-border-radius: 500px;
+        -moz-border-radius: 500px;
+        -ms-border-radius: 500px;
+        border-radius: 500px;
+        position: relative;
+        left: 15%; }
+      .middleBlock + .middleBlock article section p {
+        padding: 1em 0;
+        font-size: 1em;
+        line-height: 1.5vmax; }
+
+  .middleBlock + .middleBlock + .middleBlock {
+    background: #fffdfc;
+    height: auto; }
+    .middleBlock + .middleBlock + .middleBlock article {
+      background: transparent;
+      padding-top: 5em; }
+      .middleBlock + .middleBlock + .middleBlock article h3 {
+        text-transform: uppercase;
+        font-size: 1.6em;
+        color: #a4a6a6; }
+      .middleBlock + .middleBlock + .middleBlock article #projectContainer {
+        display: table;
+        margin: 0 7%; }
+        .middleBlock + .middleBlock + .middleBlock article #projectContainer .project {
+          display: table-cell;
+          width: 29.33%;
+          height: 550px;
+          padding: 1em;
+          color: #d9d9d9; }
+          .middleBlock + .middleBlock + .middleBlock article #projectContainer .project img {
+            width: 100%;
+            height: 250px;
+            margin-bottom: 1em; }
+          .middleBlock + .middleBlock + .middleBlock article #projectContainer .project h4 {
+            font-size: 1.2em;
+            text-align: center;
+            padding: 0.2em 0;
+            padding-left: 20%;
+            color: #f7891e;
+            font-family: gotham_book;
+            font-weight: bold;
+            text-transform: uppercase; }
+          .middleBlock + .middleBlock + .middleBlock article #projectContainer .project p {
+            font-size: 1em;
+            line-height: 1.5em;
+            color: #262626; }
+
+  .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form h3 {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: inherit;
+    font-family: gotham_light, Arial, sans-serif;
+    font-size: 3vmax;
+    opacity: 1;
+    padding: 0.5em;
+    color: #f7891e;
+    background: transparent; } }
