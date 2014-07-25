@@ -45,7 +45,17 @@ header {
   text-align: center;
   color: white;
   width: 100%;
-  position: fixed; }
+  position: fixed;
+  z-index: 100; }
+  header h2 {
+    margin: 0.1em 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #f7891e;
+    font-family: gotham_light;
+    display: inline-block; }
+    header h2 span {
+      color: white; }
   header ul {
     position: relative; }
     header ul li {
@@ -58,7 +68,7 @@ header {
 
 .middleBlock:first-of-type {
   background: url(../img/about.jpg) 50% 0 no-repeat fixed;
-  background-size: 100%;
+  background-size: 200%;
   min-height: 100%;
   color: #f2f2f2; }
   .middleBlock:first-of-type article {
@@ -89,7 +99,7 @@ header {
   color: #262626; }
   .middleBlock + .middleBlock article {
     width: 100%;
-    padding: 1em 0;
+    padding: 5em 0;
     background: inherit; }
     .middleBlock + .middleBlock article h3 {
       padding: 1.5em 10% 0;
@@ -103,15 +113,30 @@ header {
       font-size: 2.5vmax;
       padding: 1em 10% 0;
       line-height: 3vmax; }
+    .middleBlock + .middleBlock article img {
+      float: none;
+      width: 50%;
+      display: block;
+      margin: 0 auto; }
     .middleBlock + .middleBlock article section {
-      display: inline-block;
+      display: block;
       width: 100%;
       padding: 1em 0; }
       .middleBlock + .middleBlock article section h3 {
         font-size: 2.5vmax;
+        margin: 0.3em 0;
         padding: 0;
         text-align: center;
         color: #f7891e; }
+      .middleBlock + .middleBlock article section img {
+        width: 15%;
+        float: none;
+        -webkit-border-radius: 500px;
+        -moz-border-radius: 500px;
+        -ms-border-radius: 500px;
+        border-radius: 500px;
+        position: relative;
+        left: 0; }
       .middleBlock + .middleBlock article section p {
         padding: 0.5em 10%;
         font-size: 2vmax;
@@ -122,7 +147,10 @@ header {
   height: auto; }
   .middleBlock + .middleBlock + .middleBlock article {
     background: transparent;
-    padding-top: 5em; }
+    padding-top: 1em; }
+    .middleBlock + .middleBlock + .middleBlock article h3 {
+      font-size: 2em;
+      font-family: gotham_light; }
     .middleBlock + .middleBlock + .middleBlock article #projectContainer {
       margin: 0 10%; }
       .middleBlock + .middleBlock + .middleBlock article #projectContainer .project {
@@ -151,8 +179,6 @@ header {
           font-size: 1em;
           font-family: gotham_light;
           border: none;
-          position: relative;
-          left: 10%;
           width: 100%;
           -webkit-border-radius: 5px;
           -moz-border-radius: 5px;
@@ -164,7 +190,7 @@ header {
 
 .middleBlock + .middleBlock + .middleBlock + .middleBlock {
   background: url(../img/contact.jpg) 50% 0 no-repeat fixed;
-  background-size: 100%;
+  background-size: 280%;
   min-height: 100%; }
   .middleBlock + .middleBlock + .middleBlock + .middleBlock article {
     background: rgba(30, 30, 30, 0.8); }
@@ -252,24 +278,28 @@ footer {
     text-align: center; }
 
 @media screen and (min-width: 640px) {
+  .middleBlock + .middleBlock article img {
+    width: 35%; }
+
   .middleBlock + .middleBlock + .middleBlock {
     background: #fffdfc;
     height: auto; }
     .middleBlock + .middleBlock + .middleBlock article {
       background: transparent;
-      padding-top: 5em; }
+      padding-top: 0em; }
       .middleBlock + .middleBlock + .middleBlock article #projectContainer {
         display: inherit;
         margin: 0 10%; }
         .middleBlock + .middleBlock + .middleBlock article #projectContainer .project {
           display: block;
           width: 48%;
-          height: 450px;
+          height: 550px;
           padding: 1%;
           float: left;
           color: #d9d9d9; }
           .middleBlock + .middleBlock + .middleBlock article #projectContainer .project img {
-            width: 100%; }
+            width: 100%;
+            height: 220px; }
           .middleBlock + .middleBlock + .middleBlock article #projectContainer .project h4 {
             font-size: 1.2em;
             text-align: center;
@@ -280,7 +310,8 @@ footer {
             text-transform: uppercase; }
           .middleBlock + .middleBlock + .middleBlock article #projectContainer .project p {
             font-size: 0.8em;
-            display: block; } }
+            display: block;
+            color: #f7891e; } }
 @media screen and (min-width: 1024px) {
   header {
     z-index: 100;
@@ -331,6 +362,9 @@ footer {
       line-height: 2.4vmax; }
     .middleBlock + .middleBlock article img {
       float: left;
+      display: inline;
+      width: 20%;
+      margin: 0;
       margin-left: 10%;
       padding-right: 3%; }
     .middleBlock + .middleBlock article .table {
@@ -385,7 +419,7 @@ footer {
             text-align: center;
             padding: 0.2em 0;
             padding-left: 20%;
-            color: #f7891e;
+            color: #262626;
             font-family: gotham_book;
             font-weight: bold;
             text-transform: uppercase; }
@@ -393,6 +427,24 @@ footer {
             font-size: 1em;
             line-height: 1.5em;
             color: #262626; }
+          .middleBlock + .middleBlock + .middleBlock article #projectContainer .project button {
+            background: #f7891e;
+            color: white;
+            padding: 0.5em;
+            text-transform: uppercase;
+            font-size: 1em;
+            font-family: gotham_light;
+            border: none;
+            position: relative;
+            left: 10%;
+            width: 100%;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            border-radius: 5px; }
+          .middleBlock + .middleBlock + .middleBlock article #projectContainer .project button:hover {
+            background: #c26307;
+            cursor: pointer; }
 
   .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form h3 {
     display: block;

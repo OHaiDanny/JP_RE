@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('#logo a').css('display', 'none');
     
     // article height fix
-    $('#home article').css('height', $('#about').height());
+    $('#home article').css('height', $('#home').height());
     $('#about article').css('height', $('#about').height());
     $('#contact article').css('height', $('#contact').height());
     

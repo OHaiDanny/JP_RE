@@ -92,6 +92,18 @@ header {
     color:white;
     width:100%;
     position:fixed;
+    z-index:100;
+    h2 {
+            margin:0.1em 0;
+            font-size:2em;
+            text-transform:uppercase;
+            color:$thirdColor;
+            font-family:gotham_light;
+            display:inline-block;
+            span {
+                color:white;
+            }
+    }
     ul {
         position:relative;
         li {
@@ -110,7 +122,7 @@ header {
 //Home Content CSS
 .middleBlock:first-of-type {
     background:url(../img/about.jpg) 50% 0 no-repeat fixed;
-    background-size:100%;
+    background-size:200%;
     min-height:100%;
     color:$fifthColor;
     article {
@@ -147,7 +159,7 @@ header {
     color:$secondColor;
     article {
         width:100%;
-        padding:1em 0;
+        padding:5em 0;
         background:inherit;
         h3 {
             padding:1.5em 10% 0;
@@ -163,15 +175,29 @@ header {
             padding:1em 10% 0;
             line-height:3vmax;
         }
+        img {
+            float:none;
+            width:50%;
+            display:block;
+            margin:0 auto;
+        }
         section {
-            display:inline-block;
+            display:block;
             width:100%;
             padding:1em 0;
             h3 {
                 font-size:2.5vmax;
+                margin:0.3em 0;
                 padding:0;
                 text-align:center;
                 color:$thirdColor;
+            }
+            img {
+                width:15%;
+                float:none;
+                @include border-radius(500px);
+                position:relative;
+                left:0;
             }
             p {
                 padding:0.5em 10%;
@@ -188,7 +214,11 @@ header {
     height:auto;
     article {
         background:transparent;
-        padding-top:5em;
+        padding-top:1em;
+        h3 {
+            font-size:2em;
+            font-family:gotham_light;
+        }
         #projectContainer {
             margin:0 10%;
             .project {
@@ -220,8 +250,6 @@ header {
                     font-size:1em;
                     font-family:gotham_light;
                     border:none;
-                    position:relative;
-                    left:10%;
                     width:100%;
                     @include border-radius(5px);
                 }
@@ -237,7 +265,7 @@ header {
 // Contact CSS
 .middleBlock + .middleBlock + .middleBlock + .middleBlock {
     background:url(../img/contact.jpg) 50% 0 no-repeat fixed;
-    background-size:100%;
+    background-size:280%;
     min-height:100%;
     article {
         background:rgba(30,30,30,0.8);
@@ -339,25 +367,33 @@ footer {
 
 @media screen and (min-width:640px) {
     
+    .middleBlock + .middleBlock {
+         article {
+             img {
+                 width:35%;
+             }
+         }   
+    }
     // Project Content CSS
     .middleBlock + .middleBlock + .middleBlock {
         background:lighten($thirdColor, 45%);
         height:auto;
         article {
             background:transparent;
-            padding-top:5em;
+            padding-top:0em;
             #projectContainer {
                 display:inherit;
                 margin:0 10%;
                 .project {
                     display:block;
                     width:48%;
-                    height:450px;
+                    height:550px;
                     padding:1%;
                     float:left;
                     color:$fourthColor;
                     img {
                         width:100%;
+                        height:220px;
                     }
                     h4 {
                         font-size:1.2em;
@@ -371,6 +407,7 @@ footer {
                     p {
                         font-size:0.8em;
                         display:block;
+                        color:$thirdColor;
                     }
                 }
             }
@@ -446,6 +483,9 @@ footer {
             }
             img {
                 float:left;
+                display:inline;
+                width:20%;
+                margin:0;
                 margin-left:10%;
                 padding-right:3%;
             }
@@ -508,7 +548,7 @@ footer {
                         text-align:center;
                         padding:0.2em 0;
                         padding-left:20%;
-                        color:$thirdColor;
+                        color:$secondColor;
                         font-family:gotham_book;
                         font-weight:bold;
                         text-transform:uppercase;
@@ -517,6 +557,23 @@ footer {
                         font-size:1em;
                         line-height:1.5em;
                         color:$secondColor;
+                    }
+                    button {
+                        background:$thirdColor;
+                        color:white;
+                        padding:0.5em;
+                        text-transform:uppercase;
+                        font-size:1em;
+                        font-family:gotham_light;
+                        border:none;
+                        position:relative;
+                        left:10%;
+                        width:100%;
+                        @include border-radius(5px);
+                    }
+                    button:hover {
+                        background:darken($thirdColor, 15%);
+                        cursor:pointer;
                     }
                 }
             }
